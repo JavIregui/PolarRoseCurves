@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		59ADD0692D4F0C9700E84D57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59ADD0502D4F0C9600E84D57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59ADD0572D4F0C9600E84D57;
+			remoteInfo = PolarRoseCurves;
+		};
+		59ADD0732D4F0C9700E84D57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59ADD0502D4F0C9600E84D57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59ADD0572D4F0C9600E84D57;
+			remoteInfo = PolarRoseCurves;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59ADD0582D4F0C9600E84D57 /* PolarRoseCurves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolarRoseCurves.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59ADD0682D4F0C9700E84D57 /* PolarRoseCurvesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolarRoseCurvesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59ADD0722D4F0C9700E84D57 /* PolarRoseCurvesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolarRoseCurvesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		59ADD05A2D4F0C9600E84D57 /* PolarRoseCurves */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PolarRoseCurves;
+			sourceTree = "<group>";
+		};
+		59ADD06B2D4F0C9700E84D57 /* PolarRoseCurvesTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PolarRoseCurvesTests;
+			sourceTree = "<group>";
+		};
+		59ADD0752D4F0C9700E84D57 /* PolarRoseCurvesUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PolarRoseCurvesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59ADD0552D4F0C9600E84D57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59ADD0652D4F0C9700E84D57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59ADD06F2D4F0C9700E84D57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59ADD04F2D4F0C9600E84D57 = {
+			isa = PBXGroup;
+			children = (
+				59ADD05A2D4F0C9600E84D57 /* PolarRoseCurves */,
+				59ADD06B2D4F0C9700E84D57 /* PolarRoseCurvesTests */,
+				59ADD0752D4F0C9700E84D57 /* PolarRoseCurvesUITests */,
+				59ADD0592D4F0C9600E84D57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59ADD0592D4F0C9600E84D57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59ADD0582D4F0C9600E84D57 /* PolarRoseCurves.app */,
+				59ADD0682D4F0C9700E84D57 /* PolarRoseCurvesTests.xctest */,
+				59ADD0722D4F0C9700E84D57 /* PolarRoseCurvesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59ADD0572D4F0C9600E84D57 /* PolarRoseCurves */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59ADD07C2D4F0C9700E84D57 /* Build configuration list for PBXNativeTarget "PolarRoseCurves" */;
+			buildPhases = (
+				59ADD0542D4F0C9600E84D57 /* Sources */,
+				59ADD0552D4F0C9600E84D57 /* Frameworks */,
+				59ADD0562D4F0C9600E84D57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				59ADD05A2D4F0C9600E84D57 /* PolarRoseCurves */,
+			);
+			name = PolarRoseCurves;
+			packageProductDependencies = (
+			);
+			productName = PolarRoseCurves;
+			productReference = 59ADD0582D4F0C9600E84D57 /* PolarRoseCurves.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59ADD0672D4F0C9700E84D57 /* PolarRoseCurvesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59ADD07F2D4F0C9700E84D57 /* Build configuration list for PBXNativeTarget "PolarRoseCurvesTests" */;
+			buildPhases = (
+				59ADD0642D4F0C9700E84D57 /* Sources */,
+				59ADD0652D4F0C9700E84D57 /* Frameworks */,
+				59ADD0662D4F0C9700E84D57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59ADD06A2D4F0C9700E84D57 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				59ADD06B2D4F0C9700E84D57 /* PolarRoseCurvesTests */,
+			);
+			name = PolarRoseCurvesTests;
+			packageProductDependencies = (
+			);
+			productName = PolarRoseCurvesTests;
+			productReference = 59ADD0682D4F0C9700E84D57 /* PolarRoseCurvesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		59ADD0712D4F0C9700E84D57 /* PolarRoseCurvesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59ADD0822D4F0C9700E84D57 /* Build configuration list for PBXNativeTarget "PolarRoseCurvesUITests" */;
+			buildPhases = (
+				59ADD06E2D4F0C9700E84D57 /* Sources */,
+				59ADD06F2D4F0C9700E84D57 /* Frameworks */,
+				59ADD0702D4F0C9700E84D57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59ADD0742D4F0C9700E84D57 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				59ADD0752D4F0C9700E84D57 /* PolarRoseCurvesUITests */,
+			);
+			name = PolarRoseCurvesUITests;
+			packageProductDependencies = (
+			);
+			productName = PolarRoseCurvesUITests;
+			productReference = 59ADD0722D4F0C9700E84D57 /* PolarRoseCurvesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59ADD0502D4F0C9600E84D57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					59ADD0572D4F0C9600E84D57 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					59ADD0672D4F0C9700E84D57 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 59ADD0572D4F0C9600E84D57;
+					};
+					59ADD0712D4F0C9700E84D57 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 59ADD0572D4F0C9600E84D57;
+					};
+				};
+			};
+			buildConfigurationList = 59ADD0532D4F0C9600E84D57 /* Build configuration list for PBXProject "PolarRoseCurves" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59ADD04F2D4F0C9600E84D57;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 59ADD0592D4F0C9600E84D57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59ADD0572D4F0C9600E84D57 /* PolarRoseCurves */,
+				59ADD0672D4F0C9700E84D57 /* PolarRoseCurvesTests */,
+				59ADD0712D4F0C9700E84D57 /* PolarRoseCurvesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59ADD0562D4F0C9600E84D57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59ADD0662D4F0C9700E84D57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59ADD0702D4F0C9700E84D57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59ADD0542D4F0C9600E84D57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59ADD0642D4F0C9700E84D57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59ADD06E2D4F0C9700E84D57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59ADD06A2D4F0C9700E84D57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59ADD0572D4F0C9600E84D57 /* PolarRoseCurves */;
+			targetProxy = 59ADD0692D4F0C9700E84D57 /* PBXContainerItemProxy */;
+		};
+		59ADD0742D4F0C9700E84D57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59ADD0572D4F0C9600E84D57 /* PolarRoseCurves */;
+			targetProxy = 59ADD0732D4F0C9700E84D57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		59ADD07A2D4F0C9700E84D57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59ADD07B2D4F0C9700E84D57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59ADD07D2D4F0C9700E84D57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PolarRoseCurves/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iregui.PolarRoseCurves;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59ADD07E2D4F0C9700E84D57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PolarRoseCurves/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iregui.PolarRoseCurves;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		59ADD0802D4F0C9700E84D57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iregui.PolarRoseCurvesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PolarRoseCurves.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PolarRoseCurves";
+			};
+			name = Debug;
+		};
+		59ADD0812D4F0C9700E84D57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iregui.PolarRoseCurvesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PolarRoseCurves.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PolarRoseCurves";
+			};
+			name = Release;
+		};
+		59ADD0832D4F0C9700E84D57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iregui.PolarRoseCurvesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PolarRoseCurves;
+			};
+			name = Debug;
+		};
+		59ADD0842D4F0C9700E84D57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iregui.PolarRoseCurvesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PolarRoseCurves;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59ADD0532D4F0C9600E84D57 /* Build configuration list for PBXProject "PolarRoseCurves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59ADD07A2D4F0C9700E84D57 /* Debug */,
+				59ADD07B2D4F0C9700E84D57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59ADD07C2D4F0C9700E84D57 /* Build configuration list for PBXNativeTarget "PolarRoseCurves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59ADD07D2D4F0C9700E84D57 /* Debug */,
+				59ADD07E2D4F0C9700E84D57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59ADD07F2D4F0C9700E84D57 /* Build configuration list for PBXNativeTarget "PolarRoseCurvesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59ADD0802D4F0C9700E84D57 /* Debug */,
+				59ADD0812D4F0C9700E84D57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59ADD0822D4F0C9700E84D57 /* Build configuration list for PBXNativeTarget "PolarRoseCurvesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59ADD0832D4F0C9700E84D57 /* Debug */,
+				59ADD0842D4F0C9700E84D57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59ADD0502D4F0C9600E84D57 /* Project object */;
+}
