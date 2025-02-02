@@ -8,8 +8,8 @@
 
 ## Features
 
-- Sliders to control the value of the two parameters of the Polar Rose Curve equation.
-- Animated version of the curve described by the set parameters.
+- **Sliders** to control the value of the two **parameters of the Polar Rose Curve equation**.
+- **Animation** of the curve described by the set parameters.
 
 ## Future Features
 
@@ -17,7 +17,7 @@ At the moment, there are no plans to introduce any new features.
 
 ## Requirements
 
-Before you begin, ensure you have the following software installed:
+Before you begin, ensure you have:
 
 - **Xcode**: Required to compile the project.
 - **iPhone** device to run the App.
