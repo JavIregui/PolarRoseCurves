@@ -17,6 +17,10 @@ struct ContentView: View {
     
     @State private var showNInfo = false
     @State private var showDInfo = false
+    
+    @State private var colorIndex: Int = 0
+    let colors: [Color] = [Color("AccentColor"), Color("Red"), Color("Blue"), Color("Yellow"), Color("Purple"), Color("Orange")]
+
 
     var body: some View {
         NavigationView {
@@ -29,6 +33,10 @@ struct ContentView: View {
                     Text("Polar Rose Curves")
                         .font(.title)
                         .foregroundColor(.white)
+                    
+                    Text("r(θ) = cos((n/d) * θ)")
+                        .font(.title3)
+                        .foregroundColor(.white.opacity(0.25))
                     
                     Spacer()
                     
@@ -50,7 +58,7 @@ struct ContentView: View {
                             }
                         }
 
-                        context.stroke(path, with: .color(Color("AccentColor")), lineWidth: 3)
+                        context.stroke(path, with: .color(colors[colorIndex]), lineWidth: 3)
                     }
                     .frame(width: 300, height: 300)
                     .background(Color.black.opacity(0))
@@ -114,20 +122,21 @@ struct ContentView: View {
     }
     
     func animateDrawing() {
-            progress = 0  // Reinicia el progreso
-            timer?.invalidate()  // Detiene cualquier temporizador previo
+            progress = 0
+            timer?.invalidate()
             
             timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { _ in
                 if progress < 1 {
-                    progress += 0.01  // Aumenta el progreso poco a poco
+                    progress += 0.01
                 } else {
-                    timer?.invalidate()  // Detiene el temporizador cuando la animación termina
+                    timer?.invalidate()
                 }
             }
         }
         
         func resetAnimation() {
             progress = 0
+            colorIndex = Int.random(in: 0..<colors.count)
             animateDrawing()
         }
 }
