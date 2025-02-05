@@ -21,7 +21,11 @@ struct ContentView: View {
     @State private var showDInfo = false
     
     @State private var colorIndex: Int = 0
-    let colors: [Color] = [Color("AccentColor"), Color("Red"), Color("Blue"), Color("Yellow"), Color("Purple"), Color("Orange")]
+    let colors: [Color] = [Color("AccentColor"), Color("RedCurve"), Color("BlueCurve"), Color("YellowCurve"), Color("PurpleCurve"), Color("OrangeCurve")]
+    
+    @State private var tracerProgress: Double = 0.0
+    @State private var tracerTimer: Timer?
+    let tracerLoopDuration: Double = 5.0
 
 
     var body: some View {
@@ -45,27 +49,37 @@ struct ContentView: View {
                     Canvas { context, size in
                         let center = CGPoint(x: size.width / 2, y: size.height / 2)
                         let scale: CGFloat = min(size.width, size.height) / 2.25
-                                            
+                        
                         var path = Path()
-                                    
+                        
                         for theta in stride(from: 0.0, to: progress * 2 * .pi * d, by: 0.01) {
                             let r = cos((n/d) * theta) * scale
                             let x = center.x + r * cos(theta)
                             let y = center.y + r * sin(theta)
-
+                            
                             if theta == 0 {
                                 path.move(to: CGPoint(x: x, y: y))
                             } else {
                                 path.addLine(to: CGPoint(x: x, y: y))
                             }
                         }
-
+                        
                         context.stroke(path, with: .color(colors[colorIndex]), lineWidth: 3)
+                        
+                        let currentTheta = progress < 1 ? progress * 2 * .pi * d : tracerProgress * 2 * .pi * d
+                    
+                        let r = cos((n/d) * currentTheta) * scale
+                        let tracerX = center.x + r * cos(currentTheta)
+                        let tracerY = center.y + r * sin(currentTheta)
+                        
+                        let tracerRect = CGRect(x: tracerX - 5, y: tracerY - 5, width: 10, height: 10)
+                        context.fill(Path(ellipseIn: tracerRect), with: .color(.white))
                     }
                     .frame(width: 300, height: 300)
                     .background(Color.black.opacity(0))
                     .onAppear {
-                        animateDrawing()
+                        calculateDuration()
+                        resetAnimation()
                     }
                     
                     Spacer()
@@ -143,13 +157,14 @@ struct ContentView: View {
             previousIntegrand = currentIntegrand
         }
             
-        let desiredSpeed: Double = 5.0
+        let desiredSpeed: Double = 4.0
         totalDuration = totalLength/desiredSpeed
     }
         
     func animateDrawing() {
         progress = 0
         timer?.invalidate()
+        tracerTimer?.invalidate()
         startTime = Date()
             
         timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { [self] timer in
@@ -163,17 +178,31 @@ struct ContentView: View {
                 
             if progress >= 1 {
                 timer.invalidate()
+                startTracerAnimation()
             }
+        }
+    }
+    
+    func startTracerAnimation() {
+        tracerProgress = 0
+        tracerTimer?.invalidate()
+        tracerTimer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { timer in
+            tracerProgress = (tracerProgress + 0.01/tracerLoopDuration).truncatingRemainder(dividingBy: 1.0)
         }
     }
         
     func resetAnimation() {
         progress = 0
+        tracerProgress = 0
+        timer?.invalidate()
+        tracerTimer?.invalidate()
+        
         var newIndex = colorIndex
         while(newIndex == colorIndex){
             newIndex = Int.random(in: 0..<colors.count)
         }
         colorIndex =  newIndex
+        
         animateDrawing()
     }
 }
