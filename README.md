@@ -14,10 +14,10 @@
 ## Screenshots
 
 <div display="flex">
-  <img src="screenshots/screen1.png" alt="screenshot 1">
-  <img src="screenshots/screen2.png" alt="screenshot 2">
-  <img src="screenshots/screen3.png" alt="screenshot 3">
-  <img src="screenshots/screen4.png" alt="screenshot 4">
+  <img src="screenshots/screen1.PNG" alt="screenshot 1">
+  <img src="screenshots/screen2.PNG" alt="screenshot 2">
+  <img src="screenshots/screen3.PNG" alt="screenshot 3">
+  <img src="screenshots/screen4.PNG" alt="screenshot 4">
 </div>
 
 ## Future Features
