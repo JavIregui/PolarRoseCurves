@@ -11,6 +11,15 @@
 - **Sliders** to control the value of the two **parameters of the Polar Rose Curve equation**.
 - **Animation** of the curve described by the set parameters.
 
+## Screenshots
+
+<div display="flex">
+  <img src="screenshots/screen1.png" alt="screenshot 1">
+  <img src="screenshots/screen2.png" alt="screenshot 2">
+  <img src="screenshots/screen3.png" alt="screenshot 3">
+  <img src="screenshots/screen4.png" alt="screenshot 4">
+</div>
+
 ## Future Features
 
 At the moment, there are no plans to introduce any new features.
