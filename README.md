@@ -29,6 +29,11 @@
 
 At the moment, there are no plans to introduce any new features.
 
+## Issues
+
+- The launch screen doesn't display the right background color
+- I might be using the function that calculates the constant drawing velocity wrong because, after it's done drawing, the white dot speeds up.
+
 ## Requirements
 
 Before you begin, ensure you have:
