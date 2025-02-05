@@ -78,6 +78,8 @@ struct ContentView: View {
                     .frame(width: 300, height: 300)
                     .background(Color.black.opacity(0))
                     .onAppear {
+                        n = Double(Int.random(in: 1..<10))
+                        d = Double(Int.random(in: 1..<10))
                         calculateDuration()
                         resetAnimation()
                     }
