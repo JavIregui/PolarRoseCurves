@@ -13,12 +13,12 @@
 
 ## Screenshots
 
-<div display="flex">
-  <img src="screenshots/screen1.PNG" alt="screenshot 1">
-  <img src="screenshots/screen2.PNG" alt="screenshot 2">
-  <img src="screenshots/screen3.PNG" alt="screenshot 3">
-  <img src="screenshots/screen4.PNG" alt="screenshot 4">
-</div>
+<p align="center">
+  <img src="screenshots/screen1.PNG" alt="screenshot 1" width="24%" style="margin-right: 1%;" />
+  <img src="screenshots/screen2.PNG" alt="screenshot 2" width="24%" style="margin-right: 1%;" />
+  <img src="screenshots/screen3.PNG" alt="screenshot 3" width="24%" style="margin-right: 1%;" />
+  <img src="screenshots/screen4.PNG" alt="screenshot 4" width="24%" />
+</p>
 
 ## Future Features
 
