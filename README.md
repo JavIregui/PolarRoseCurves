@@ -22,6 +22,11 @@
 
 ## Future Features
 
+- Add Settings for:
+  - Colors
+  - Speed
+  - Max/Min  
+
 At the moment, there are no plans to introduce any new features.
 
 ## Requirements
