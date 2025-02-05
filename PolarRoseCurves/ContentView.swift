@@ -14,6 +14,8 @@ struct ContentView: View {
     
     @State private var progress: Double = 0
     @State private var timer: Timer?
+    @State private var startTime: Date?
+    @State private var totalDuration: Double = 1.0
     
     @State private var showNInfo = false
     @State private var showDInfo = false
@@ -78,7 +80,7 @@ struct ContentView: View {
                                         .foregroundColor(.blue)
                                 }
                                 .popover(isPresented: $showNInfo) {
-                                    Text("Controls the number of petals in the Polar Rose Curve.")
+                                    Text("Controls the number of petals in the curve.")
                                         .multilineTextAlignment(.leading)
                                         .fixedSize(horizontal: false, vertical: true)
                                         .padding()
@@ -87,8 +89,10 @@ struct ContentView: View {
                             }
                             
                             Slider(value: $n, in: 1...10, step: 1)
-                                .onChange(of: n) { resetAnimation()
-                            }
+                                .onChange(of: n) {
+                                    calculateDuration()
+                                    resetAnimation()
+                                }
                         }
                         
                         VStack {
@@ -109,8 +113,10 @@ struct ContentView: View {
                             }
                             
                             Slider(value: $d, in: 1...10, step: 1)
-                                .onChange(of: d) { resetAnimation()
-                            }
+                                .onChange(of: d) {
+                                    calculateDuration()
+                                    resetAnimation()
+                                }
                         }
                     }
                 }
@@ -121,26 +127,53 @@ struct ContentView: View {
         }
     }
     
-    func animateDrawing() {
-            progress = 0
-            timer?.invalidate()
+    func calculateDuration() {
+        let k = n/d
+        let thetaMax = 2 * Double.pi * d
+        let steps = 1000
+        let dTheta = thetaMax/Double(steps)
+        var totalLength: Double = 0.0
             
-            timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { _ in
-                if progress < 1 {
-                    progress += 0.01
-                } else {
-                    timer?.invalidate()
-                }
-            }
+        var previousIntegrand = sqrt(pow(cos(0), 2) + pow(k * sin(0), 2))
+            
+        for i in 1...steps {
+            let theta = Double(i) * dTheta
+            let currentIntegrand = sqrt(pow(cos(k * theta), 2) + pow(k * sin(k * theta), 2))
+            totalLength += (previousIntegrand + currentIntegrand) * dTheta/2
+            previousIntegrand = currentIntegrand
         }
+            
+        let desiredSpeed: Double = 5.0
+        totalDuration = totalLength/desiredSpeed
+    }
         
-        func resetAnimation() {
-            progress = 0
-            var newIndex = colorIndex
-            while(newIndex == colorIndex){
-                newIndex = Int.random(in: 0..<colors.count)
+    func animateDrawing() {
+        progress = 0
+        timer?.invalidate()
+        startTime = Date()
+            
+        timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { [self] timer in
+            guard let startTime = startTime else {
+                timer.invalidate()
+                return
             }
-            colorIndex =  newIndex
-            animateDrawing()
+                
+            let elapsed = Date().timeIntervalSince(startTime)
+            progress = min(elapsed/totalDuration, 1.0)
+                
+            if progress >= 1 {
+                timer.invalidate()
+            }
         }
+    }
+        
+    func resetAnimation() {
+        progress = 0
+        var newIndex = colorIndex
+        while(newIndex == colorIndex){
+            newIndex = Int.random(in: 0..<colors.count)
+        }
+        colorIndex =  newIndex
+        animateDrawing()
+    }
 }
