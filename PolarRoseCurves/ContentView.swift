@@ -136,7 +136,11 @@ struct ContentView: View {
         
         func resetAnimation() {
             progress = 0
-            colorIndex = Int.random(in: 0..<colors.count)
+            var newIndex = colorIndex
+            while(newIndex == colorIndex){
+                newIndex = Int.random(in: 0..<colors.count)
+            }
+            colorIndex =  newIndex
             animateDrawing()
         }
 }
